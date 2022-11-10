@@ -4,7 +4,7 @@
 
 import got from 'got'
 import { v4 as uuid } from 'uuid'
-import * as Types from './v8-types'
+import * as Types from './types'
 
 export interface State {
   collaborator_states: Types.NodeType[]
@@ -234,8 +234,8 @@ export const Todoist = (token: string, userOptions = defaultOptions) => {
   }
   const createCommand =
     <Args>(type: keyof TodoistResources, action: string) =>
-    async (args: Args) =>
-      executeCommand(type, action, args)
+      async (args: Args) =>
+        executeCommand(type, action, args)
 
   const sync = async (resourceTypes = options.resourceTypes) => {
     const res = await request(

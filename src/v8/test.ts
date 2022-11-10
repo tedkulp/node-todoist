@@ -1,6 +1,6 @@
-import { v8 as Todoist } from './index'
+import { v8 as Todoist } from '../index'
 import { config } from 'dotenv'
-import { NodeType } from './v8-types'
+import { NodeType } from './types'
 import path from 'path'
 config({ path: path.basename(__dirname + '/.env') })
 

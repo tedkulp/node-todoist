@@ -1,7 +1,7 @@
 import { Todoist as TodoistV8 } from './v8'
 import { Todoist as TodoistV9 } from './v9'
 
-import * as TodoistV8Types from './v8-types'
+import * as TodoistV8Types from './v8/types'
 import * as TodoistV9Types from './v9/types'
 
 // export V9 as the current version
